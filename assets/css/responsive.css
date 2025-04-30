@@ -1,0 +1,158 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.hero {
+    height: 100vh;
+    min-height: 800px;
+}
+
+.home-banner {
+    height: 100%;
+}
+
+.products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.recipes-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.event-card {
+    flex-direction: row;
+}
+
+.event-image {
+    flex: 0 0 40%;
+}
+
+.footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (hover: hover) {
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+    
+    .product:hover {
+        transform: translateY(-10px);
+    }
+    
+    .recipe-card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+}
+
+/* ================================================================================================ */
+
+/* About Us */
+
+
+.punya-about .container {
+    width: 1200px;
+    padding: 80px 20px;
+}
+
+.about-section, 
+.history-section {
+    margin: 100px 0;
+}
+
+.about-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.history-content {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-image, 
+.history-image {
+    flex: 1;
+    min-width: 45%;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover, 
+.history-image:hover {
+    transform: scale(1.03);
+}
+
+.about-text, 
+.history-text {
+    flex: 1;
+    min-width: 45%;
+}
+
+.about-text h1, 
+.history-text h1 {
+    font-size: 3.5rem;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-text p, 
+.history-text p {
+    font-size: 1.1rem;
+}
+
+
+
+/* CONTACT US */
+
+
+.contact-form {
+    width: 800px;
+    margin: 80px auto;
+    padding: 60px;
+}
+
+.contact-form h2 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.submit-btn {
+    padding: 16px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+@media (hover: hover) {
+    .form-group input:hover,
+    .form-group textarea:hover {
+        border-color: #D03739;
+    }
+    
+    .submit-btn:hover {
+        background-color: #b12e2b;
+        transform: translateY(-2px);
+    }
+}
+

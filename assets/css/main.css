@@ -26,11 +26,11 @@ header {
     top: 0;
     z-index: 100;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, .3);
+    font-family: "Inter", serif;
 }
 
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
@@ -78,7 +78,7 @@ nav ul li a.active::after {
     left: 0;
     width: 100%;
     height: 5px;
-    background: #fff;
+    background: var(--warna-putih);
 }
 
 /* ================================================================================================ */
@@ -87,11 +87,11 @@ nav ul li a.active::after {
 /* HERO SECTION */
 
 .home-banner {
-    padding: 60px 10px 150px 10px; /* Menyesuaikan padding bagian atas dan bawah sesuai gambar */
+    padding: 60px 10px 150px 10px;
     position: relative;
     width: 100%;
     height: 100%;
-    background-size: cover; /* Membuat background menutupi seluruh area */
+    background-size: cover; 
 }
 
 #gambar {
@@ -133,10 +133,10 @@ nav ul li a.active::after {
     margin-bottom: 40px;
 }
 
-.products-grid {
+.products-grid {    
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns for products */
-    gap: 40px; /* Space between products */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -153,7 +153,7 @@ nav ul li a.active::after {
 }
 
 .product-img {
-    height: 350px; /* Height for product image */
+    height: 350px; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +161,7 @@ nav ul li a.active::after {
 }
 
 .product:hover .product-img {
-    transform: scale(1.03); /* Enlarge image on hover */
+    transform: scale(1.03); 
 }
 
 .product-info {
@@ -185,7 +185,7 @@ nav ul li a.active::after {
 .view-all {
     text-align: center;
     margin-top: 40px;
-    padding: 20px 0; /* Padding to space around the container */
+    padding: 20px 0; 
 }
 
 .view-all .btn {
@@ -395,28 +395,28 @@ nav ul li a.active::after {
 /* FOOTER */
 footer {
     background: var(--warna-biru);  
-    color: #333; /* Teks warna abu-abu gelap */
-    padding: 60px 0 20px;
+    color: #333;
+    padding: 70px 20px 20px; 
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Menampilkan 3 kolom */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 40px;
     margin-bottom: 40px;
 }
 
 .footer-col h3 {
-    color: #000; /* Warna hitam untuk judul kolom */
+    color: #000;
     margin-bottom: 20px;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
 
 .footer-col p {
-    color: #333; /* Warna teks utama abu-abu gelap */
+    color: #333;
     margin-bottom: 10px;
     display: block;
     transition: color 0.3s;
@@ -426,7 +426,7 @@ footer {
 
 .footer-col a {
     font-weight: bold;
-    color: #333; /* Warna teks utama abu-abu gelap */
+    color: #333; 
     margin-bottom: 10px;
     display: block;
     transition: color 0.3s;
@@ -441,18 +441,6 @@ footer {
     font-size: 0.8rem;
     line-height: 1.4;
 }
-
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    font-size: 18px;
-    margin-right: 15px;
-    color: #333;
-    transition: color 0.3s;
-}
-
 
 .copyright {
     text-align: center;
@@ -482,7 +470,6 @@ footer {
     padding: 0 20px;
 }
 
-/* COMMON SECTION STYLES */
 .about-section, 
 .history-section {
     margin-bottom: 80px;
@@ -492,10 +479,9 @@ footer {
 .history-content {
     display: flex;
     align-items: center;
-    gap: 70px;  /* Increased space between text and image */
+    gap: 70px;  
 }
 
-/* ABOUT SECTION  */
 .about-content {
     flex-direction: row;
 }
@@ -510,7 +496,7 @@ footer {
 .history-image {
     flex: 1;
     min-width: 45%;
-    margin-right: 20px;  /* Added margin for extra spacing */
+    margin-right: 20px;  
 }
 
 .about-image img,
@@ -548,20 +534,20 @@ footer {
 
 /* CONTACT FORM STYLES */
 .contact-form {
-    background-color: #E4F3F7; /* Warna biru muda */
+    background-color: #E4F3F7; 
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Menyesuaikan lebar form */
-    margin: 50px auto; /* Menjaga form berada di tengah halaman */
-    margin-bottom: 100px; /* Memberikan ruang untuk footer */
-    border-radius: 8px; /* Menambah radius pada form untuk kesan lebih lembut */
+    max-width: 800px; 
+    margin: 50px auto; 
+    margin-bottom: 100px; 
+    border-radius: 8px; 
 }
 
 .contact-form h2 {
     text-align: center;
-    font-size: 40px; /* Mengurangi ukuran font sedikit untuk kesan lebih rapi */
+    font-size: 40px; 
     color: #000;
-    margin-bottom: 30px; /* Menjaga jarak antara judul dan form */
+    margin-bottom: 30px; 
     font-family: 'Nanum Pen Script', cursive;
 }
 
@@ -611,13 +597,11 @@ footer {
 }
 
 .submit-btn:hover {
-    background-color: #b12e2b; /* Mengubah warna tombol saat hover */
+    background-color: #b12e2b; 
 }
 
-/* MEMBERIKAN RUANG DI BAWAH FORM UNTUK FOOTER */
 body {
-    background-color: #E4F3F7; /* Warna latar belakang yang sama dengan form */
-    font-family: Arial, sans-serif;
+    background-color: #E4F3F7; 
     margin: 0;
     padding: 0;
 }
